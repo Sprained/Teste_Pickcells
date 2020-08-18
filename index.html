@@ -7,15 +7,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <input type="file">
-    <button onclick="teste()">teste</button>
-    <!-- <img src="" id="img"> -->
-    <canvas id="img"></canvas>
-    <p id="type"></p>
-    <p id="accurece"></p>
+    <div>
+        <canvas id="img"></canvas>
+        <input type="file">
+        <button onclick="teste()">Analisar</button>
+        <p id="type"></p>
+        <p id="accurece"></p>
+    </div>
+    
     <script>
         var input = document.querySelector('input[type=file]');
 
